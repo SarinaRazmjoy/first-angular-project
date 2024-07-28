@@ -1,0 +1,33 @@
+<h1 style="text-align: center;"> جدول </h1>
+<hr>
+
+<table id="data">
+    <thead>
+        <tr>
+            <th></th>
+
+            <th>ردیف</th>
+            <th>نام</th>
+            <th>نام خانوادگی</th>
+            <th>کدملی</th>
+            <th>جنسیت</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+        <tr *ngFor="let row of formData; let i = index;">
+            <td>
+                <div class="btn">
+                    <button (click)="editRow(row.id)">edit</button>
+                    <button (click)="deleteRow(i)">delete</button>
+                </div>
+            </td>
+            <td>{{ i + 1 }}</td>
+            <td>{{ row.nameInput }}</td>
+            <td>{{ row.familyInput }}</td>
+            <td>{{ row.codeInput }}</td>
+            <td>{{ row.genderInput }}</td>
+        </tr>
+    </tbody>
+
+
+</table>

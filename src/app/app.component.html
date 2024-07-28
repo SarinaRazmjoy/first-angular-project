@@ -1,0 +1,6 @@
+
+<div>
+  <app-form [data2]="editData" (sendFormData)="data = $event"></app-form>
+  <app-table [data]="data" (editRowEvent)="editData = $event"></app-table>
+</div>
+

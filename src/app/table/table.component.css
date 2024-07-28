@@ -1,0 +1,29 @@
+th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 15px;
+
+}
+
+table {
+
+
+    margin-left: 850px;
+
+}
+
+td {
+
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 15px;
+
+
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+ 
+ 

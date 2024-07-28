@@ -1,0 +1,41 @@
+
+
+    <h1 style="text-align: center;"> form </h1>
+    <hr>
+    <div>
+        <div class="input">
+            <label for="inputfamily">نام خانوادگی:</label>
+            <input type="text" id="inputfamily" [(ngModel)]="familyinput">
+        </div>
+        
+
+        <div class="input inp-1">
+            <label for="inputname">نام :</label>
+            <input type="text" id="inputname" [(ngModel)]="nameinput">
+           
+        </div>
+
+        <div class="inputc">
+            <label for="inputcode"> کدملی:</label>
+            <input type="text" id="inputcode"  [(ngModel)]="codeinput">
+        </div>
+
+
+        <div class=" inputg ">
+            جنسیت:
+
+            <select id="inputgen" [(ngModel)]="genderinput">
+                <option value="مرد">مرد</option>
+                <option value="زن">زن</option>
+            </select>
+
+
+        </div>
+
+        <div class="btn">
+            <button type="button" class="buts" (click)="save()"> save </button>
+        </div>
+        
+        <hr> 
+    </div>
+
